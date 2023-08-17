@@ -23,6 +23,11 @@
         </activity>
 
         <activity android:name=".ui.signup.SignUpActivity" />
+
+        <activity android:name=".ui.signup.SignUpConfirmationActivity"/>
+
+        <activity android:name=".ui.login.LoginErrorActivity"/>
+
     </application>
 
 </manifest>

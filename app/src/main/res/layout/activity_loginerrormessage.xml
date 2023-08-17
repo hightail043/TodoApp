@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/tvSignInError"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="#363234"
+        android:gravity="center_horizontal"
+        android:text="Sign In Failed !"
+        android:textColor="@android:color/white"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/tvSignInErrorMessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:backgroundTint="#363234"
+        android:gravity="center_horizontal"
+        android:text="Invalid Credentials, Please go back to Sign In Page and
+                        Login with Correct Credentials."
+        android:textColor="#39F3C4"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btnBackToLoginPageFromSignInError"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#026186"
+        android:fadingEdge="horizontal"
+        android:text="Back"
+        android:textColor="@android:color/white"
+        android:textSize="24sp" />
+
+
+</LinearLayout>
