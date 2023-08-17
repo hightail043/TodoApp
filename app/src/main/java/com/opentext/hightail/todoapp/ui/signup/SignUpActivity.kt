@@ -1,5 +1,6 @@
 package com.opentext.hightail.todoapp.ui.signup
 
+import android.content.Intent
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
@@ -20,10 +21,14 @@ class SignUpActivity : AppCompatActivity() {
         signUpConfirmBtn = findViewById(R.id.btnSignUpConfirm)
         signUpConfirmBtn.setOnClickListener {
             Log.d(TAG, "SignUp-Confirm button clicked")
+            launchSignUpConfirmationScreen()
         }
     }
 
-
+    private fun launchSignUpConfirmationScreen() {
+        intent = Intent(this, SignUpConfirmationActivity::class.java)
+        startActivity(intent)
+    }
 
     companion object {
         private const val TAG = "SignUpActivity"
