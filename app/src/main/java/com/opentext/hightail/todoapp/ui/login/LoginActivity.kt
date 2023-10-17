@@ -6,6 +6,7 @@ import android.util.Log
 import android.widget.Button
 import androidx.appcompat.app.AppCompatActivity
 import com.opentext.hightail.todoapp.R
+import com.opentext.hightail.todoapp.ui.homepage.HomePageActivity
 import com.opentext.hightail.todoapp.ui.signup.SignUpActivity
 
 class LoginActivity : AppCompatActivity() {
@@ -23,7 +24,7 @@ class LoginActivity : AppCompatActivity() {
         signInBtn = findViewById(R.id.btnSignIn)
         signInBtn.setOnClickListener {
             Log.d(TAG, "SignIn Button Clicked")
-            launchSignInErrorScreen()
+            launchHomeScreen()
         }
         signUpBtn = findViewById(R.id.btnSignUp)
         signUpBtn.setOnClickListener {
@@ -32,8 +33,8 @@ class LoginActivity : AppCompatActivity() {
         }
     }
 
-    private fun launchSignInErrorScreen() {
-        val intent = Intent(this, LoginErrorActivity::class.java)
+    private fun launchHomeScreen() {
+        val intent = Intent(this, HomePageActivity::class.java)
         startActivity(intent)
     }
 
